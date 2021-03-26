@@ -1,6 +1,6 @@
 package co.com.sofka.parques.domain.juego.factory;
 
-import co.com.sofka.parques.domain.juego.Jugador;
+import co.com.sofka.parques.domain.juego.entity.Jugador;
 import co.com.sofka.parques.domain.juego.valueObject.JugadorId;
 import co.com.sofka.parques.domain.juego.valueObject.Nombre;
 

@@ -2,6 +2,7 @@ package co.com.sofka.parques.domain.juego;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.parques.domain.juego.entity.Jugador;
 import co.com.sofka.parques.domain.juego.event.JuegoCreado;
 import co.com.sofka.parques.domain.juego.event.JuegoInicializado;
 import co.com.sofka.parques.domain.juego.event.JugadorAdicionado;

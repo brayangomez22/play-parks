@@ -3,7 +3,7 @@ package co.com.sofka.parques.domain.tablero.valueObject;
 import co.com.sofka.domain.generic.Identity;
 
 public class TableroId extends Identity {
-    public TableroId(String uuid) {
+    private TableroId(String uuid) {
         super(uuid);
     }
 

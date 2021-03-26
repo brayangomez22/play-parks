@@ -3,14 +3,14 @@ package co.com.sofka.parques.domain.juego.valueObject;
 import co.com.sofka.domain.generic.Identity;
 
 public class JugadorId extends Identity {
-    public JugadorId(String uuid) {
-        super(uuid);
+    private JugadorId(String uid) {
+        super(uid);
     }
 
     public JugadorId() {
     }
 
-    public static JuegoId of(String uuid){
-        return new JuegoId(uuid);
+    public static JugadorId of(String uid) {
+        return new JugadorId(uid);
     }
 }

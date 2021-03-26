@@ -3,7 +3,7 @@ package co.com.sofka.parques.domain.juego.valueObject;
 import co.com.sofka.domain.generic.Identity;
 
 public class JuegoId extends Identity {
-    public JuegoId(String uuid) {
+    private JuegoId(String uuid) {
         super(uuid);
     }
 
