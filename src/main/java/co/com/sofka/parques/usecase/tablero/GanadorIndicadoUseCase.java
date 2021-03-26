@@ -12,6 +12,7 @@ public class GanadorIndicadoUseCase extends UseCase<TriggeredEvent<IndicarGanado
     public void executeUseCase(TriggeredEvent<IndicarGanador> input) {
         var event = input.getDomainEvent();
         var tablero = Tablero.from(event.getTableroId(), retrieveEvents());
+        tablero.indicarGanador();
         tablero.finalizarTablero();
 
         var ganador = new Jugador(event.getJugadorId(), event.getJugador().getNombre());

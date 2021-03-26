@@ -6,13 +6,15 @@ import co.com.sofka.parques.domain.tablero.valueObject.TurnoId;
 
 public class Turno extends Entity<TurnoId> {
     private final Nombre nombre;
+    private final Boolean salirDeCasa;
 
-    public Turno(TurnoId entityId, Nombre nombre) {
+    public Turno(TurnoId entityId, Nombre nombre, Boolean salirDeCasa) {
         super(entityId);
         this.nombre = nombre;
+        this.salirDeCasa = salirDeCasa;
     }
 
-    public void tirarDados(){
-
+    public void avanzarCasillas(){
+        
     }
 }

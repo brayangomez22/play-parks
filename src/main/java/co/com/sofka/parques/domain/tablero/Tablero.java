@@ -11,10 +11,9 @@ import co.com.sofka.parques.domain.tablero.entity.Turno;
 import co.com.sofka.parques.domain.tablero.event.*;
 import co.com.sofka.parques.domain.tablero.valueObject.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Tablero extends AggregateEvent<TableroId> {
 
@@ -53,6 +52,22 @@ public class Tablero extends AggregateEvent<TableroId> {
         if (ganadorIndicado != false){
             appendChange(new IndicarGanador(juegoId, tableroId, jugadorId, jugador));
         }
+    }
+
+    public void tirarDados(){
+        var cara1 = this.dados
+                .values()
+                .stream()
+                .map(dado -> Map.of(dado.identity(), dado.getCarasDado1()))
+                .collect(Collectors.toList());
+
+        var cara2 = this.dados
+                .values()
+                .stream()
+                .map(dado -> Map.of(dado.identity(), dado.getCarasDado2()))
+                .collect(Collectors.toList());
+
+        appendChange(new LanzarDados(juegoId, cara1, cara2)).apply();
     }
 
     public void finalizarTablero() {

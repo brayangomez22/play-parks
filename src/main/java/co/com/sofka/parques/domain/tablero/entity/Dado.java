@@ -7,32 +7,29 @@ import co.com.sofka.parques.domain.tablero.valueObject.DadoId;
 import java.util.List;
 
 public class Dado extends Entity<DadoId> {
-    private final List<Cara> carasDado1;
-    private final List<Cara> carasDado2;
+    private Cara carasDado1;
+    private Cara carasDado2;
 
-    public Dado(DadoId entityId, List<Cara> carasDado1, List<Cara> carasDado2) {
+    public Dado(DadoId entityId, Cara carasDado1, Cara carasDado2) {
         super(entityId);
         this.carasDado1 = carasDado1;
         this.carasDado2 = carasDado2;
     }
 
     public void lanzarDado() {
-        for (var i = 1; i <= 6; i++) {
-            var numero = (int) ((Math.random() * 6) + 1);
-            carasDado1.add(new Cara(numero));
-        }
+        var numero = (int) ((Math.random() * 6) + 1);
+        this.carasDado1 = new Cara(numero);
 
-        for (var i = 1; i <= 6; i++) {
-            var numero = (int) ((Math.random() * 6) + 1);
-            carasDado2.add(new Cara(numero));
-        }
+        var numero2 = (int) ((Math.random() * 6) + 1);
+        this.carasDado2 = new Cara(numero2);
+
     }
 
-    public List<Cara> getCarasDado1() {
+    public Cara getCarasDado1() {
         return carasDado1;
     }
 
-    public List<Cara> getCarasDado2() {
+    public Cara getCarasDado2() {
         return carasDado2;
     }
 }
