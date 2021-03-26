@@ -75,3 +75,13 @@ Jsrc/main/java/co/com/sofka/parques/domain/tablero/event/TableroCreado.java,5/8
 Ksrc/main/java/co/com/sofka/parques/domain/tablero/command/CrearTablero.java,6/4/649b23c14cc6f255360d8fab06e0f8d37cd7f841
 {
 Ksrc/main/java/co/com/sofka/parques/usecase/tablero/CrearTableroUseCase.java,4/1/41f35774e677cb819e121ee9a9be0067dc489d96
+{
+Ksrc/main/java/co/com/sofka/parques/domain/tablero/valueObject/Casillas.java,7/2/722f6ef03c0fbbd8bf17edcd8ac5600cc94c83f8
+w
+Gsrc/test/java/co/com/sofka/parques/tablero/CrearTableroUseCaseTest.java,d/e/de31fa6ac1021ab67485f76f3d2b07298d5f7284
+{
+Ksrc/main/java/co/com/sofka/parques/domain/tablero/event/IndicarGanador.java,6/0/60671477bcfcc9e75b6af80d006ee97a3cbffea7
+~
+Nsrc/main/java/co/com/sofka/parques/usecase/tablero/GanadorIndicadoUseCase.java,b/b/bb8ca4a8e6bf9468c05043bc7df731beea9e937b
+z
+Jsrc/test/java/co/com/sofka/parques/tablero/GanadorIndicadoUseCaseTest.java,a/9/a9a1a4de8bf8ef377706af2dcc92f138f372de60

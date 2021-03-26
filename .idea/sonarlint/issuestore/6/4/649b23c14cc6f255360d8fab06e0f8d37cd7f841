@@ -1,5 +1,13 @@
 
-v
-java:S1128"TRemove this unused import 'co.com.sofka.parques.domain.juego.valueObject.JugadorId'.(ˆ¹«üÿÿÿÿ8ÉÑ–Á†/
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ÈÛâ†/
+I
+java:S1948"'Make "bases" transient or serializable.(ñ¡ıÔÿÿÿÿÿ8ğ’â†/
+p
+java:S1128"SRemove this unused import 'co.com.sofka.parques.domain.tablero.valueObject.BaseId'.(ÿ’×«8ÈÛâ†/
+s
+java:S1128	"VRemove this unused import 'co.com.sofka.parques.domain.tablero.valueObject.Colorsito'.(å‘­…8”Î¼à†/
 s
 java:S1128"QRemove this unused import 'co.com.sofka.parques.domain.juego.valueObject.Nombre'.(ËÄ†şÿÿÿÿ8»ç–Á†/
+v
+java:S1128"TRemove this unused import 'co.com.sofka.parques.domain.juego.valueObject.JugadorId'.(ˆ¹«üÿÿÿÿ8ÉÑ–Á†/

@@ -1,3 +1,11 @@
 
 H
-java:S2160"+Override the "equals" method in this class.(ö“¡Â8í®ì·†/
+java:S2160"+Override the "equals" method in this class.(ö“¡Â8Å„ºÚ†/
+F
+java:S11255")Remove the literal "false" boolean value.(é¸öÊ8³‡´ë†/
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ8ÃÑðë†/
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¦˜¦æ†/
+G
+java:S54115"*Use the primitive boolean expression here.(é¸öÊ8³‡´ë†/

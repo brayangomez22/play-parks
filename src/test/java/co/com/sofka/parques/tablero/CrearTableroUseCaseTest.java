@@ -34,9 +34,9 @@ public class CrearTableroUseCaseTest {
         var casillas = Set.of(
                 new Casillas(1),
                 new Casillas(2),
-                new Casillas(2),
-                new Casillas(1),
-                new Casillas(1)
+                new Casillas(3),
+                new Casillas(4),
+                new Casillas(5)
         );
 
         var bases = List.of(

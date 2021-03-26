@@ -1,2 +1,4 @@
 
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ç¯¬Ø
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ç¯¬Ø
+O
+java:S1948"-Make "baseTablero" transient or serializable.(ïÖÅŠÿÿÿÿÿ8Ïø‘å†/

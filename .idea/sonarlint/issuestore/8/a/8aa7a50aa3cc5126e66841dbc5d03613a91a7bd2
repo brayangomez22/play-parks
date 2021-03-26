@@ -3,3 +3,5 @@ M
 java:S2160"+Override the "equals" method in this class.(ÉüŠúùÿÿÿÿ8§™þº†/
 L
 java:S1068"*Remove this unused "nombre" private field.(ó…åžüÿÿÿÿ8¥çâ«†/
+ž
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´Ø—¶8Ø¿…ë†/

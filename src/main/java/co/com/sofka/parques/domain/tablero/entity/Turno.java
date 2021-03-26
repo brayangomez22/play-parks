@@ -12,5 +12,7 @@ public class Turno extends Entity<TurnoId> {
         this.nombre = nombre;
     }
 
-    
+    public void tirarDados(){
+
+    }
 }

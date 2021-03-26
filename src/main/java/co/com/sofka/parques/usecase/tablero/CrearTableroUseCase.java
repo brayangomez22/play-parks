@@ -14,6 +14,7 @@ public class CrearTableroUseCase extends UseCase<RequestCommand<CrearTablero>, R
         var tableroId = new TableroId();
 
         var tablero = new Tablero(tableroId, command.getJuegoId());
+        tablero.inicializarTablero();
 
         emit().onResponse(new ResponseEvents(tablero.getUncommittedChanges()));
     }

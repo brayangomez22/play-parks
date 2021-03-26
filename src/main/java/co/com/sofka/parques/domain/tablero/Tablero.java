@@ -2,6 +2,7 @@ package co.com.sofka.parques.domain.tablero;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.parques.domain.juego.entity.Jugador;
 import co.com.sofka.parques.domain.juego.valueObject.JuegoId;
 import co.com.sofka.parques.domain.juego.valueObject.JugadorId;
 import co.com.sofka.parques.domain.tablero.entity.BaseTablero;
@@ -18,11 +19,15 @@ import java.util.Set;
 public class Tablero extends AggregateEvent<TableroId> {
 
     protected Boolean tableroCreado;
+    protected Boolean tableroInicializado;
+    protected Boolean ganadorIndicado = false;
     protected List<BaseTablero> baseTablero;
     protected Map<DadoId, Dado> dados;
     protected JuegoId juegoId;
     protected Map<TurnoId, Turno> turnos;
-    protected Set<JugadorId> jugadorIds;
+    protected JugadorId jugadorId;
+    protected Jugador jugador;
+    protected TableroId tableroId;
 
     public Tablero(TableroId entityId, JuegoId juegoId) {
         super(entityId);
@@ -44,11 +49,21 @@ public class Tablero extends AggregateEvent<TableroId> {
         appendChange(new TableroInicializado(juegoId)).apply();
     }
 
+    public void indicarGanador(){
+        if (ganadorIndicado != false){
+            appendChange(new IndicarGanador(juegoId, tableroId, jugadorId, jugador));
+        }
+    }
+
     public void finalizarTablero() {
         appendChange(new TableroFinalizado(juegoId)).apply();
     }
 
-    public Boolean getTableroCreado() {
+    public Boolean isTableroCreado() {
         return tableroCreado;
+    }
+
+    public Boolean isTableroInicializado() {
+        return tableroInicializado;
     }
 }
